@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		EDCCC58028B66595009BE508 /* Isabel_ChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCC57F28B66595009BE508 /* Isabel_ChatApp.swift */; };
-		EDCCC58228B66595009BE508 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCC58128B66595009BE508 /* ContentView.swift */; };
+		EDCCC58228B66595009BE508 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCC58128B66595009BE508 /* RootView.swift */; };
 		EDCCC58428B66596009BE508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCCC58328B66596009BE508 /* Assets.xcassets */; };
 		EDCCC58728B66596009BE508 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCCC58628B66596009BE508 /* Preview Assets.xcassets */; };
+		EDCCC59428B6776E009BE508 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCC59328B6776E009BE508 /* Font.swift */; };
+		EDCCC59828B677CF009BE508 /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCCC59528B677CF009BE508 /* LexendDeca-Regular.ttf */; };
+		EDCCC59928B677CF009BE508 /* LexendDeca-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCCC59628B677CF009BE508 /* LexendDeca-Bold.ttf */; };
+		EDCCC59A28B677CF009BE508 /* LexendDeca-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCCC59728B677CF009BE508 /* LexendDeca-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EDCCC57C28B66595009BE508 /* Isabel-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Isabel-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCCC57F28B66595009BE508 /* Isabel_ChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Isabel_ChatApp.swift; sourceTree = "<group>"; };
-		EDCCC58128B66595009BE508 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EDCCC58128B66595009BE508 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		EDCCC58328B66596009BE508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDCCC58628B66596009BE508 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDCCC59328B6776E009BE508 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		EDCCC59528B677CF009BE508 /* LexendDeca-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Regular.ttf"; sourceTree = "<group>"; };
+		EDCCC59628B677CF009BE508 /* LexendDeca-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Bold.ttf"; sourceTree = "<group>"; };
+		EDCCC59728B677CF009BE508 /* LexendDeca-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-SemiBold.ttf"; sourceTree = "<group>"; };
+		EDCCC59B28B678A5009BE508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,14 @@
 		EDCCC57E28B66595009BE508 /* Isabel-Chat */ = {
 			isa = PBXGroup;
 			children = (
+				EDCCC59B28B678A5009BE508 /* Info.plist */,
+				EDCCC58F28B66A49009BE508 /* Views */,
+				EDCCC58E28B66A40009BE508 /* ViewModels */,
+				EDCCC58D28B66A1B009BE508 /* Models */,
+				EDCCC59028B66A51009BE508 /* Services */,
+				EDCCC59128B66A5B009BE508 /* Helpers */,
+				EDCCC59228B66A8E009BE508 /* Fonts */,
 				EDCCC57F28B66595009BE508 /* Isabel_ChatApp.swift */,
-				EDCCC58128B66595009BE508 /* ContentView.swift */,
 				EDCCC58328B66596009BE508 /* Assets.xcassets */,
 				EDCCC58528B66596009BE508 /* Preview Content */,
 			);
@@ -65,6 +80,53 @@
 				EDCCC58628B66596009BE508 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDCCC58D28B66A1B009BE508 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EDCCC58E28B66A40009BE508 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EDCCC58F28B66A49009BE508 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDCCC58128B66595009BE508 /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EDCCC59028B66A51009BE508 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EDCCC59128B66A5B009BE508 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EDCCC59328B6776E009BE508 /* Font.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EDCCC59228B66A8E009BE508 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EDCCC59628B677CF009BE508 /* LexendDeca-Bold.ttf */,
+				EDCCC59528B677CF009BE508 /* LexendDeca-Regular.ttf */,
+				EDCCC59728B677CF009BE508 /* LexendDeca-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDCCC58728B66596009BE508 /* Preview Assets.xcassets in Resources */,
+				EDCCC59828B677CF009BE508 /* LexendDeca-Regular.ttf in Resources */,
+				EDCCC59A28B677CF009BE508 /* LexendDeca-SemiBold.ttf in Resources */,
+				EDCCC59928B677CF009BE508 /* LexendDeca-Bold.ttf in Resources */,
 				EDCCC58428B66596009BE508 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDCCC58228B66595009BE508 /* ContentView.swift in Sources */,
+				EDCCC58228B66595009BE508 /* RootView.swift in Sources */,
 				EDCCC58028B66595009BE508 /* Isabel_ChatApp.swift in Sources */,
+				EDCCC59428B6776E009BE508 /* Font.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +337,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Isabel-Chat/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Isabel-Chat/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +366,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Isabel-Chat/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Isabel-Chat/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

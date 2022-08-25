@@ -15,6 +15,8 @@
 		EDCCC59828B677CF009BE508 /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCCC59528B677CF009BE508 /* LexendDeca-Regular.ttf */; };
 		EDCCC59928B677CF009BE508 /* LexendDeca-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCCC59628B677CF009BE508 /* LexendDeca-Bold.ttf */; };
 		EDCCC59A28B677CF009BE508 /* LexendDeca-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDCCC59728B677CF009BE508 /* LexendDeca-SemiBold.ttf */; };
+		EDCCC59E28B7D60B009BE508 /* CustomToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCC59D28B7D60B009BE508 /* CustomToolBar.swift */; };
+		EDCCC5A028B7DEF9009BE508 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCC59F28B7DEF9009BE508 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		EDCCC59628B677CF009BE508 /* LexendDeca-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Bold.ttf"; sourceTree = "<group>"; };
 		EDCCC59728B677CF009BE508 /* LexendDeca-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-SemiBold.ttf"; sourceTree = "<group>"; };
 		EDCCC59B28B678A5009BE508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EDCCC59D28B7D60B009BE508 /* CustomToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToolBar.swift; sourceTree = "<group>"; };
+		EDCCC59F28B7DEF9009BE508 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				EDCCC58128B66595009BE508 /* RootView.swift */,
+				EDCCC59C28B7D5F1009BE508 /* CustomToolBar */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +132,15 @@
 				EDCCC59728B677CF009BE508 /* LexendDeca-SemiBold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EDCCC59C28B7D5F1009BE508 /* CustomToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				EDCCC59D28B7D60B009BE508 /* CustomToolBar.swift */,
+				EDCCC59F28B7DEF9009BE508 /* CustomButton.swift */,
+			);
+			path = CustomToolBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +216,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCCC59E28B7D60B009BE508 /* CustomToolBar.swift in Sources */,
 				EDCCC58228B66595009BE508 /* RootView.swift in Sources */,
 				EDCCC58028B66595009BE508 /* Isabel_ChatApp.swift in Sources */,
 				EDCCC59428B6776E009BE508 /* Font.swift in Sources */,
+				EDCCC5A028B7DEF9009BE508 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		ED6BA56428CA6A650097F564 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6BA56328CA6A650097F564 /* AuthViewModel.swift */; };
+		ED6BA56728CA700B0097F564 /* OnBoardingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6BA56628CA700B0097F564 /* OnBoardingContainer.swift */; };
+		ED6BA56928CA727B0097F564 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6BA56828CA727B0097F564 /* Welcome.swift */; };
+		ED6BA56B28CA72AB0097F564 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6BA56A28CA72AB0097F564 /* PhoneNumber.swift */; };
+		ED6BA56D28CA72BD0097F564 /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6BA56C28CA72BD0097F564 /* Verification.swift */; };
+		ED6BA56F28CA72D00097F564 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6BA56E28CA72D00097F564 /* Profile.swift */; };
+		ED6BA57128CA72DE0097F564 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6BA57028CA72DE0097F564 /* Contact.swift */; };
+		ED6BA57328CA8D220097F564 /* CustomOnBoardingButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6BA57228CA8D220097F564 /* CustomOnBoardingButtonStyle.swift */; };
 		EDCCC58028B66595009BE508 /* Isabel_ChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCC57F28B66595009BE508 /* Isabel_ChatApp.swift */; };
 		EDCCC58228B66595009BE508 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCC58128B66595009BE508 /* RootView.swift */; };
 		EDCCC58428B66596009BE508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCCC58328B66596009BE508 /* Assets.xcassets */; };
@@ -29,6 +36,13 @@
 
 /* Begin PBXFileReference section */
 		ED6BA56328CA6A650097F564 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		ED6BA56628CA700B0097F564 /* OnBoardingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContainer.swift; sourceTree = "<group>"; };
+		ED6BA56828CA727B0097F564 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		ED6BA56A28CA72AB0097F564 /* PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumber.swift; sourceTree = "<group>"; };
+		ED6BA56C28CA72BD0097F564 /* Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
+		ED6BA56E28CA72D00097F564 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		ED6BA57028CA72DE0097F564 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		ED6BA57228CA8D220097F564 /* CustomOnBoardingButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOnBoardingButtonStyle.swift; sourceTree = "<group>"; };
 		EDCCC57C28B66595009BE508 /* Isabel-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Isabel-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCCC57F28B66595009BE508 /* Isabel_ChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Isabel_ChatApp.swift; sourceTree = "<group>"; };
 		EDCCC58128B66595009BE508 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -61,6 +75,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED6BA56528CA6FE60097F564 /* OnBoard */ = {
+			isa = PBXGroup;
+			children = (
+				ED6BA56628CA700B0097F564 /* OnBoardingContainer.swift */,
+				ED6BA56828CA727B0097F564 /* Welcome.swift */,
+				ED6BA56A28CA72AB0097F564 /* PhoneNumber.swift */,
+				ED6BA56C28CA72BD0097F564 /* Verification.swift */,
+				ED6BA56E28CA72D00097F564 /* Profile.swift */,
+				ED6BA57028CA72DE0097F564 /* Contact.swift */,
+			);
+			path = OnBoard;
+			sourceTree = "<group>";
+		};
 		EDCCC57328B66595009BE508 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				EDCCC58128B66595009BE508 /* RootView.swift */,
+				ED6BA56528CA6FE60097F564 /* OnBoard */,
 				EDCCC59C28B7D5F1009BE508 /* CustomToolBar */,
 			);
 			path = Views;
@@ -158,6 +186,7 @@
 			children = (
 				EDCCC59D28B7D60B009BE508 /* CustomToolBar.swift */,
 				EDCCC59F28B7DEF9009BE508 /* CustomButton.swift */,
+				ED6BA57228CA8D220097F564 /* CustomOnBoardingButtonStyle.swift */,
 			);
 			path = CustomToolBar;
 			sourceTree = "<group>";
@@ -246,12 +275,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6BA57128CA72DE0097F564 /* Contact.swift in Sources */,
 				EDCCC5AF28C0D219009BE508 /* AppDelegate.swift in Sources */,
+				ED6BA56F28CA72D00097F564 /* Profile.swift in Sources */,
+				ED6BA56928CA727B0097F564 /* Welcome.swift in Sources */,
 				EDCCC59E28B7D60B009BE508 /* CustomToolBar.swift in Sources */,
+				ED6BA56B28CA72AB0097F564 /* PhoneNumber.swift in Sources */,
+				ED6BA56728CA700B0097F564 /* OnBoardingContainer.swift in Sources */,
+				ED6BA56D28CA72BD0097F564 /* Verification.swift in Sources */,
 				EDCCC58228B66595009BE508 /* RootView.swift in Sources */,
 				ED6BA56428CA6A650097F564 /* AuthViewModel.swift in Sources */,
 				EDCCC58028B66595009BE508 /* Isabel_ChatApp.swift in Sources */,
 				EDCCC59428B6776E009BE508 /* Font.swift in Sources */,
+				ED6BA57328CA8D220097F564 /* CustomOnBoardingButtonStyle.swift in Sources */,
 				EDCCC5A028B7DEF9009BE508 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
